@@ -1,0 +1,18 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "apps-stage.seattletimesdata.com",
+      "path": "seahawks-predictions"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "2014/seahawks-predictions"
+    }
+  },
+  "title": "",
+  "description": "",
+  "url": "",
+  "slug": "",
+  "tags": [],
+  "sheets": ["19rcHltigAOR_UBBGnJOYxbmDAWtPjG-76KnPETxYmWE"]
+}
