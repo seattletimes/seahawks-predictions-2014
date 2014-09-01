@@ -53,8 +53,8 @@
                 <p class="location">{{row.location}}</p>
               </td>
               <td class="score">
-                <p class="guess">{{row.seahawksscore}} Seahawks</p>
-                <p class="guess">{{row.opponentscore}} {{row.opponent}}</p>                
+                <p>{{row.seahawksscore}} Seahawks</p>
+                <p>{{row.opponentscore}} {{row.opponent}}</p>                
               </td>
               <td ng-repeat="person in guessers" class="{{person}}" ng-class="{
                   winner: row.winner == person

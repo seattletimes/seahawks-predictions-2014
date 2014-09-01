@@ -158,13 +158,20 @@ tr:last-child td {
 
 .date {
   font-weight: bold;
+  color: lighten(@seaGray, 10%);
 
   .location {
     font-weight: normal;
     text-transform: uppercase;
     font-size: 12px;
+    color: @seaGray;
   }
 
+}
+
+.score {
+  font-weight: bold;
+  color: lighten(@seaGray, 10%);
 }
 
 .guess {
@@ -185,4 +192,5 @@ tr:last-child td {
 
 td.winner {
   background-color: fade(@seaGreen, 50%);
+  color: lighten(@seaGray, 10%);
 }
