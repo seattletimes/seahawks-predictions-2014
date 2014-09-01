@@ -24,7 +24,7 @@
 
 body {
   font-family: @sans-serif;
-  //min-width: 1024px;
+  min-width: 1024px;
   padding: 0 1em 1em;
   color: @seaGray;
   opacity: 0.9;
@@ -38,12 +38,17 @@ a {
 
 .pencil-ad {
   height: 90px;
-  width: 775px;
+  width: 768px;
   margin: 1em auto 0 auto;
-  background-color: @light-gray; // remove
 
   @media @mobile {
     display: none;
+  }
+
+  .ad-label {
+    width: 7px;
+    height: 70px;
+    float: left;
   }
 }
 
@@ -80,11 +85,26 @@ a {
     font-size: 3em;
     font-family: @block;
     text-transform: uppercase;
+    color: white;
     margin: 1em 0 0 0;
   }
 
   p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: 0;
+  }
 
+  .map-ref {
+    text-decoration: none;
+    background-color: fade(@seaGray, 20%);
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  .map-ref:hover {
+    background-color: fade(@seaGray, 30%);
+    color: lighten(@seaGray, 10%);
   }
 }
 
@@ -96,7 +116,7 @@ a {
 }
 
 th, td {
-  border: 1px solid @seaGray;
+  border: 1px solid fade(@seaGray, 50%);
   border-top: 0;
   width: ~"calc(100%/8)";
   padding: 10px;
@@ -117,7 +137,7 @@ th {
   color: @seaGreen;
   font-size: 0.9em;
   text-align: left;
-  border-bottom: 2px solid @seaGreen;
+  border-bottom: 3px solid @seaGray;
   padding: 5px 10px;
 }
 
@@ -130,6 +150,14 @@ td {
 
 tr:last-child td {
   border-bottom: 0; //  removes border at bottom of table
+}
+
+.green-accent {
+  color: @seaGreen;
+}
+
+.date {
+  font-weight: bold;
 }
 
 .guess {
@@ -149,5 +177,5 @@ tr:last-child td {
 }
 
 td.winner {
-  background-color: fadeout(@seaGreen, 80%);
+  background-color: fade(@seaGreen, 50%);
 }

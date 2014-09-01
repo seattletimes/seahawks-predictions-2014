@@ -12,8 +12,7 @@
 
     <!-- TOP AD -->
     <div class="pencil-ad">
-      <img src="http://seattletimes.com/art/ui/adv_top.gif" width="7" height="70" alt="Advertising" class="ui floatleft">
-      ad here
+      <img src="http://seattletimes.com/art/ui/adv_top.gif" class="ad-label">
       <script>
       OAS_AD('TopRight');
       </script>
@@ -27,8 +26,8 @@
     </nav>
 
     <div class="header">
-      <h1>Seahawks pick &rsquo;em</h1>
-      <p>Seattle Times sports writers, a guest guesser and our &ldquo;<a href="http://projects.seattletimes.com/2014/hawks-fan-map">Fan of the Week</a>&rdquo; will predict the score before every Seahawks game.</p>
+      <h1>Seahawks <span class="green-accent">pick &rsquo;em</span></h1>
+      <p>Seattle Times sports writers, a guest guesser and our &ldquo;Fan of the Week&rdquo; will predict the score before every Seahawks game. For a chance to become our next fan guesser, share your story on our <a href="http://projects.seattletimes.com/2014/hawks-fan-map" class="map-ref">Hawks fan map &#x279a;</a></p>
     </div>
 
     <section ng-controller="seahawksTable" class="table-area">
@@ -37,7 +36,7 @@
           <thead>
             <tr>
               <th>Date
-              <th>Actual score
+              <th>Final score
               <th>Bob Condotta
               <th>Jayson Jenks
               <th>Jerry Brewer
@@ -50,9 +49,11 @@
             <tr ng-repeat="row in seahawks">
               <td class="date">
                 <p>{{row.date}}</p>
+                <p>{{row.time}}</p>
               </td>
-              <td class="actual">
-                <p class="guess">{{row.actual}}</p>
+              <td class="score">
+                <p class="guess">{{row.seahawksscore}} Seahawks</p>
+                <p class="guess">{{row.opponentscore}} {{row.opponent}}</p>                
               </td>
               <td ng-repeat="person in guessers" class="{{person}}" ng-class="{
                   winner: row.winner == person
@@ -67,15 +68,14 @@
 
   </section>
 
-  <!-- BOTTOM AD -->
-    <div class="pencil-ad">
-      <img src="http://seattletimes.com/art/ui/adv_top.gif" width="7" height="70" alt="Advertising" class="ui floatleft">
-      ad here
-      <script>
-      OAS_AD('TopRight');
-      </script>
-    </div>
-  <!-- END OF BOTTOM AD -->
+    <!-- BOTTOM AD -->
+      <div class="pencil-ad">
+        <img src="http://seattletimes.com/art/ui/adv_top.gif" class="ad-label" />
+        <script>
+        OAS_AD('TopRight');
+        </script>
+      </div>
+    <!-- END OF BOTTOM AD -->
 
   <script>
   var seahawksData = <%= JSON.stringify(json.SeahawksScorePredictions_2014season) %>;
