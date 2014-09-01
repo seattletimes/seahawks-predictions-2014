@@ -24,15 +24,64 @@
 
 body {
   font-family: @sans-serif;
+  min-width: 1024px;
+  padding: 0 1em 1em;
+}
+
+.pencil-ad {
+  height: 90px;
+  width: 775px;
+  margin: 1em auto 0 auto;
+  background-color: @light-gray; // remove
+}
+
+.top-bar {
+  border-bottom: 1px solid rgb(170, 170, 170);
+  position: relative;
+
+  .logo {
+    width: 100%;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    display: block;
+
+    img {
+      box-sizing: content-box;
+      height: 30px;
+      background: white;
+      padding: 10px;
+      border: none;
+      border-image-source: initial;
+      border-image-slice: initial;
+      border-image-width: initial;
+      border-image-outset: initial;
+      border-image-repeat: initial;
+    }
+  }
 }
 
 .header {
   text-align: center;
+  margin: 0 auto 2em;
+  max-width: 768px;
+  
+  h1 {
+    font-size: 3em;
+    font-family: @block;
+    text-transform: uppercase;
+    margin: 1em 0 0 0;
+  }
+
+  p {
+
+  }
 }
 
 .seahawks-table {
   width: 100%;
   max-width: 100%;
+  margin: 0 auto 1em auto;
   border-collapse: collapse;
 }
 

@@ -10,13 +10,26 @@
 
   <body>
 
-    <nav>
-      <a href="http://seattletimes.com">
-        <img src="http://seattletimes.com/art/ui/seattletimeslogo_home.svg" class="logo">
+    <!-- TOP AD -->
+    <div class="pencil-ad">
+      <img src="http://seattletimes.com/art/ui/adv_top.gif" width="7" height="70" alt="Advertising" class="ui floatleft">
+      ad here
+      <script>
+      OAS_AD('TopRight');
+      </script>
+    </div>
+    <!-- END OF TOP AD -->
+
+    <nav class="top-bar">
+      <a class="logo" href="http://seattletimes.com">
+        <img src="assets/logo.svg" />
       </a>
     </nav>
 
-    <h1 class="header">Seahawks pick &rsquo;em</h1>
+    <div class="header">
+      <h1>Seahawks pick &rsquo;em</h1>
+      <p>Chatter chatter chatter chatter.</p>
+    </div>
 
     <section ng-controller="seahawksTable" class="table-area">
         
@@ -45,7 +58,7 @@
                   winner: row.winner == person
                 }">
                 <p class="guess">{{row[person]}}</p>
-                <p class="comment">{{row[person + "comment"]}}</p>
+                <p class="comment" ng-show="row[person + 'comment']">&ldquo;{{row[person + "comment"]}}&rdquo;</p>
                 <p class="name" ng-show="row[person + 'name']">&mdash; {{row[person + 'name']}}
               </td>
             </tr>
@@ -53,6 +66,16 @@
         </table>
 
   </section>
+
+  <!-- BOTTOM AD -->
+    <div class="pencil-ad">
+      <img src="http://seattletimes.com/art/ui/adv_top.gif" width="7" height="70" alt="Advertising" class="ui floatleft">
+      ad here
+      <script>
+      OAS_AD('TopRight');
+      </script>
+    </div>
+  <!-- END OF BOTTOM AD -->
 
   <script>
   var seahawksData = <%= JSON.stringify(json.SeahawksScorePredictions_2014season) %>;
