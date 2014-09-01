@@ -24,19 +24,30 @@
 
 body {
   font-family: @sans-serif;
-  min-width: 1024px;
+  //min-width: 1024px;
   padding: 0 1em 1em;
+  color: @seaGray;
+  opacity: 0.9;
+  background-color: @seaBlue;
 }
+
+a {
+  color: @seaGray;
+}
+
 
 .pencil-ad {
   height: 90px;
   width: 775px;
   margin: 1em auto 0 auto;
   background-color: @light-gray; // remove
+
+  @media @mobile {
+    display: none;
+  }
 }
 
 .top-bar {
-  border-bottom: 1px solid rgb(170, 170, 170);
   position: relative;
 
   .logo {
@@ -49,8 +60,7 @@ body {
     img {
       box-sizing: content-box;
       height: 30px;
-      background: white;
-      padding: 10px;
+      background: @seaBlue;
       border: none;
       border-image-source: initial;
       border-image-slice: initial;
@@ -86,7 +96,7 @@ body {
 }
 
 th, td {
-  border: 1px solid @light-gray;
+  border: 1px solid @seaGray;
   border-top: 0;
   width: ~"calc(100%/8)";
   padding: 10px;
@@ -104,9 +114,10 @@ th:last-child, td:last-child {
 th {
   font-family: @block;
   text-transform: uppercase;
+  color: @seaGreen;
   font-size: 0.9em;
   text-align: left;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid @seaGreen;
   padding: 5px 10px;
 }
 
@@ -138,5 +149,5 @@ tr:last-child td {
 }
 
 td.winner {
-  background-color: fadeout(@seaGreen, 67%);
+  background-color: fadeout(@seaGreen, 80%);
 }
