@@ -2,7 +2,7 @@
   "s3": {
     "stage": {
       "bucket": "apps-stage.seattletimesdata.com",
-      "path": "seahawks-predictions"
+      "path": "angry-birds"
     },
     "live": {
       "bucket": "projects.seattletimes.com",
