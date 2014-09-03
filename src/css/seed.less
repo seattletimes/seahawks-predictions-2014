@@ -49,6 +49,7 @@ a {
 
 .top-bar {
   position: relative;
+  border-bottom: 1px solid fade(@light-gray, 50%);
 
   .logo {
     width: 100%;
@@ -58,10 +59,10 @@ a {
     display: block;
 
     img {
-      opacity: 0.6;
       box-sizing: content-box;
       height: 30px;
       background: @seaBlue;
+      padding: 10px;
       border: none;
       border-image-source: initial;
       border-image-slice: initial;
@@ -202,6 +203,7 @@ tr:last-child td {
   font-weight: bold;
   font-size: 1.1em;
   margin-bottom: 8px;
+  color: lighten(@seaGray, 10%);
 }
 
 .comment {
