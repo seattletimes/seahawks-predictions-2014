@@ -75,13 +75,13 @@ a {
   position: relative;
   text-align: center;
   margin: 0 auto 2em;
-  max-width: 768px;
+  max-width: 960px;
 
   .share {
     position: absolute;
     border-radius: 4px;
     padding: 2px;
-    top: 12px;
+    top: 16px;
     right: 8px;
     z-index: 999;
   }
@@ -93,6 +93,12 @@ a {
     label {
       background-color: fade(@seaGray, 20%);
       color: @seaGray;
+    }
+
+    label:hover {
+      opacity: 1;
+      background-color: fade(@seaGray, 30%);
+      color: lighten(@seaGray, 10%);
     }
   }
   
@@ -115,11 +121,12 @@ a {
     background-color: fade(@seaGray, 20%);
     padding: 3px 6px;
     border-radius: 4px;
+    white-space: nowrap;
   }
 
   .fancy-ref:hover {
     background-color: fade(@seaGray, 30%);
-    color: lighten(@seaGray, 15%);
+    color: lighten(@seaGray, 10%);
   }
 }
 
