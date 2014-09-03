@@ -10,14 +10,7 @@
 
   <body>
 
-    <!-- TOP AD -->
-    <div class="pencil-ad">
-      <img src="http://seattletimes.com/art/ui/adv_top.gif" class="ad-label">
-      <script>
-      OAS_AD('TopRight');
-      </script>
-    </div>
-    <!-- END OF TOP AD -->
+    <%= t.include("partials/_adTop.html") %>
 
     <nav class="top-bar">
       <a class="logo" href="http://seattletimes.com">
@@ -73,14 +66,7 @@
 
   </section>
 
-    <!-- BOTTOM AD -->
-      <div class="pencil-ad">
-        <img src="http://seattletimes.com/art/ui/adv_top.gif" class="ad-label" />
-        <script>
-        OAS_AD('Bottom');
-        </script>
-      </div>
-    <!-- END OF BOTTOM AD -->
+  <%= t.include("partials/_adTop.html") %>
 
   <script>
   var seahawksData = <%= JSON.stringify(json.SeahawksScorePredictions_2014season) %>;
