@@ -1,6 +1,6 @@
 require([
-  "angular",
   "share",
+  "angular"
 ], function(Share) {
 
   var app = angular.module("seahawks-prediction", []);
