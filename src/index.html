@@ -52,7 +52,7 @@
                 <p>{{row.opponentscore}} {{row.opponent}}</p>                
               </td>
               <td ng-repeat="person in guessers" class="{{person}}" ng-class="{
-                  winner: row.winner == person
+                  winner: row.winner.indexOf(person) > -1
                 }">
                 <!-- <img src="{{row.image}}" class="little-mug" ng-show="row[person + 'comment']" /> -->
                 <p class="guess">{{row[person]}}</p>

@@ -7,10 +7,14 @@ require([
 
   app.controller("seahawksTable", ["$scope", function($scope) {
 
-    $scope.seahawks = seahawksData;
+    //preprocess for multiple winners
+    window.seahawksData.forEach(function(row) {
+      row.winner = row.winner.split(",");
+    });
+
+    $scope.seahawks = window.seahawksData;
     
     $scope.guessers = ["condotta", "jenks", "brewer", "stone", "celebrity", "fan"];
-
 
   }]);
 
