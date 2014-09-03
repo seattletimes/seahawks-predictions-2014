@@ -98,7 +98,7 @@ a {
   .map-ref {
     text-decoration: none;
     background-color: fade(@seaGray, 20%);
-    padding: 2px 5px;
+    padding: 2px 6px;
     border-radius: 4px;
   }
 
@@ -135,7 +135,6 @@ th {
   font-family: @block;
   text-transform: uppercase;
   color: @seaGreen;
-  font-size: 0.9em;
   text-align: left;
   border-bottom: 3px solid @seaGray;
   padding: 5px 10px;
@@ -159,6 +158,7 @@ tr:last-child td {
 .date {
   font-weight: bold;
   color: lighten(@seaGray, 10%);
+  font-size: 1.1em;
 
   .location {
     font-weight: normal;
@@ -170,24 +170,52 @@ tr:last-child td {
 }
 
 .score {
+  font-size: 1.1em;
   font-weight: bold;
   color: lighten(@seaGray, 10%);
 }
 
 .guess {
   font-weight: bold;
-}
-
-.name {
-  font-family: @sans-serif;
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 0;
+  font-size: 1.1em;
+  margin-bottom: 8px;
 }
 
 .comment {
   font-family: @serif;
+}
+
+.comment-divider {
+  width: 50px;
+  border-style: inherit;
+  margin: 1em auto;
+}
+
+@mug: 50px;
+@centered: ~"calc(50% - 25px)";
+
+.little-mug {
+  width: @mug;
+  height: @mug;
+  border-radius: 100%;
+  margin: 0.5em @centered;
+  //background-color: @seaGray; // for testing
+}
+
+.name {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+
+  .fan-location {
+  }
+
+}
+
+.description {
+  font-size: 0.85em;
+  text-align: center;
 }
 
 td.winner {

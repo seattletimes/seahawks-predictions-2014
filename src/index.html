@@ -27,7 +27,7 @@
 
     <div class="header">
       <h1>Seahawks <span class="green-accent">pick &rsquo;em</span></h1>
-      <p>Seattle Times sports writers, a guest guesser and our &ldquo;Fan of the Week&rdquo; will predict the score before every Seahawks game. For a chance to become our next fan guesser, share your story on our <a href="http://projects.seattletimes.com/2014/hawks-fan-map" class="map-ref">Hawks fan map &#x279a;</a></p>
+      <p>Seattle Times sports writers, a celebrity guesser and our &ldquo;Fan of the Week&rdquo; will predict the score before every Seahawks game. For a chance to become our next fan guesser, share your story on our <a href="http://projects.seattletimes.com/2014/hawks-fan-map" class="map-ref">Hawks fan map &#x279a;</a></p>
     </div>
 
     <section ng-controller="seahawksTable" class="table-area">
@@ -41,7 +41,7 @@
               <th>Jayson Jenks
               <th>Jerry Brewer
               <th>Larry Stone
-              <th>Guest guesser
+              <th>Celebrity guesser
               <th>Fan of the week
             </tr>
           </thead>
@@ -59,9 +59,12 @@
               <td ng-repeat="person in guessers" class="{{person}}" ng-class="{
                   winner: row.winner == person
                 }">
+                <!-- <img src="{{row.image}}" class="little-mug" ng-show="row[person + 'comment']" /> -->
                 <p class="guess">{{row[person]}}</p>
                 <p class="comment" ng-show="row[person + 'comment']">&ldquo;{{row[person + "comment"]}}&rdquo;</p>
-                <p class="name" ng-show="row[person + 'name']">&mdash; {{row[person + 'name']}}
+                <hr class="comment-divider" ng-show="row[person + 'name']">
+                <p class="name" ng-show="row[person + 'name']">{{row[person + 'name']}}<span class="fan-location" ng-show="row[person + 'location']">, {{row.fanlocation}}</span></p>
+                <p class="description" ng-show="row[person + 'description']">{{row[person + "description"]}}</p>
               </td>
             </tr>
           </tbody>
