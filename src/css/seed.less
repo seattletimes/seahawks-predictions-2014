@@ -13,7 +13,7 @@
 // COLORS
 @seaGreen: #1DD83C;
 @seaBlue: #00163F;
-@seaGray: #A5A7AF;
+@seaGray: lighten(rgb(165, 167, 175), 10%);
 @black: #222222;
 @light-gray: #CCCCCC;
 
@@ -100,7 +100,6 @@ a {
     label:hover {
       opacity: 1;
       background-color: fade(@seaGray, 30%);
-      color: lighten(@seaGray, 10%);
     }
   }
   
@@ -128,7 +127,6 @@ a {
 
   .fancy-ref:hover {
     background-color: fade(@seaGray, 30%);
-    color: lighten(@seaGray, 10%);
   }
 }
 
@@ -181,14 +179,13 @@ tr:last-child td {
 
 .date {
   font-weight: bold;
-  color: lighten(@seaGray, 10%);
   font-size: 1.1em;
 
   .location {
     font-weight: normal;
     text-transform: uppercase;
     font-size: 12px;
-    color: @seaGray;
+    color: darken(@seaGray, 10%);
   }
 
 }
@@ -196,14 +193,12 @@ tr:last-child td {
 .score {
   font-size: 1.1em;
   font-weight: bold;
-  color: lighten(@seaGray, 10%);
 }
 
 .guess {
   font-weight: bold;
   font-size: 1.1em;
   margin-bottom: 8px;
-  color: lighten(@seaGray, 10%);
 }
 
 .comment {
@@ -245,5 +240,4 @@ tr:last-child td {
 
 td.winner {
   background-color: fade(@seaGreen, 50%);
-  color: lighten(@seaGray, 10%);
 }

@@ -4,8 +4,8 @@
     "date": "9/4 (Thursday)",
     "time": "5:30 PM",
     "location": "Home",
-    "seahawksscore": "",
-    "opponentscore": "",
+    "seahawksscore": "36",
+    "opponentscore": "16",
     "opponent": "Green Bay",
     "brewer": "27-17 Seahawks",
     "brewercomment": "Seahawks have difficult time stopping Eddie Lacy, but improved offense shines on opening night.",
@@ -24,7 +24,7 @@
     "fandescription": "Bank teller, singer",
     "fanlocation": "Bothell",
     "fancomment": "I'm not real sure of the score, but I know we're going to win.",
-    "winner": ""
+    "winner": "fan"
   },
   {
     "title": "9/14 (Sunday)",
