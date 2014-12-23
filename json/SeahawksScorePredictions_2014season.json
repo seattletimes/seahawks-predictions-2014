@@ -368,8 +368,8 @@
     "date": "12/21 (Sunday)",
     "time": "5:30 PM",
     "location": "Away",
-    "seahawksscore": "",
-    "opponentscore": "",
+    "seahawksscore": "35",
+    "opponentscore": "6",
     "opponent": "Arizona",
     "brewer": "13-2 Seahawks",
     "brewercomment": "How bad will it be for Arizona’s offense against the Seahawks’ surging defense? So bad that they’ll need a Seahawks safety just to score.",
@@ -387,7 +387,7 @@
     "fanname": "Bill Sperry",
     "fandescription": "Electrician, stationed at the South Pole, Antarctica",
     "fancomment": "The Cards sputtered offensively under backup quarterback Drew Stanton, and now they’re down to their third-string quarterback, Ryan Lindley. But their defense is more than solid and will make it a close game.",
-    "winner": ""
+    "winner": "stone"
   },
   {
     "title": "12/28 (Sunday)",
