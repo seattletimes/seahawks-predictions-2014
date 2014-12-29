@@ -394,8 +394,8 @@
     "date": "12/28 (Sunday)",
     "time": "1:25 PM",
     "location": "Home",
-    "seahawksscore": "",
-    "opponentscore": "",
+    "seahawksscore": "20",
+    "opponentscore": "6",
     "opponent": "St. Louis",
     "brewer": "24-7 Seahawks",
     "brewercomment": "The Seahawks are playing too well and have too much on the line to overlook St. Louis. And they want payback for that head-scratching loss to the Rams earlier in the season.",
@@ -404,7 +404,7 @@
     "jenks": "28-10 Seahawks",
     "jenkscomment": "The Seahawks have played their best defensive football down the stretch, and the Rams simply don’t have enough offensive firepower to dent Seattle’s ultra-confident defense. Expect a couple of turnovers that set up easy Seattle scores.",
     "stone": "28-18 Seahawks",
-    "stonecomment": "The Rams always seem to give the Seahawks trouble, but with a division title and home-field advantage on the line, Seattle will round out the regular season with a decisive victory",
+    "stonecomment": "The Rams always seem to give the Seahawks trouble, but with a division title and home-field advantage on the line, Seattle will round out the regular season with a decisive victory.",
     "celebrity": "17-6 Seahawks",
     "celebrityname": "Ben Foder (aka Phoenix Jones)",
     "celebritydescription": "MMA fighter and self-proclaimed crime fighter",
@@ -413,6 +413,6 @@
     "fanname": "Ivan Yurchenko",
     "fandescription": "Journalist from Moscow, Russia",
     "fancomment": "I believe in a Seahawks victory. They need to gain revenge for their loss to the Rams in October.",
-    "winner": ""
+    "winner": "celebrity"
   }
 ]
