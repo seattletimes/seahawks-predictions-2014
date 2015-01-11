@@ -1,11 +1,37 @@
 [
   {
+    "title": "1/18 (Sunday)",
+    "date": "1/18 (Sunday)",
+    "time": "12:05 PM",
+    "location": "Home",
+    "seahawksscore": "",
+    "opponentscore": "",
+    "opponent": "Green Bay",
+    "brewer": "",
+    "brewercomment": "",
+    "condotta": "",
+    "condottacomment": "",
+    "jenks": "",
+    "jenkscomment": "",
+    "stone": "",
+    "stonecomment": "",
+    "celebrity": "",
+    "celebrityname": "",
+    "celebritydescription": "",
+    "celebritycomment": "",
+    "fan": "",
+    "fanname": "",
+    "fandescription": "",
+    "fancomment": "",
+    "winner": ""
+  },
+  {
     "title": "1/10 (Saturday)",
     "date": "1/10 (Saturday)",
     "time": "5:15 PM",
     "location": "Home",
-    "seahawksscore": "",
-    "opponentscore": "",
+    "seahawksscore": "31",
+    "opponentscore": "17",
     "opponent": "Carolina",
     "brewer": "17-6 Seahawks",
     "brewercomment": "It will be the typical nose-bloodying Hawks-Panthers fistfight, only without the late-game stress this time.",
@@ -23,7 +49,7 @@
     "fanname": "Hillary Carpenter",
     "fandescription": "From Concepcion, Chile",
     "fancomment": "A couple sacks and our 12th Man will stop Cam Newton in his own tracks. With Russell Wilson running and Marshawn Lynch doing what he does, going Beast Mode, this will be a sure win!",
-    "winner": ""
+    "winner": "fan"
   },
   {
     "title": "12/28 (Sunday)",
